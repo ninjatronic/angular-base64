@@ -1,0 +1,32 @@
+{
+    "name": "angular-base64",
+    "version": "1.0.0",
+    "author": "Ninjatronic",
+    "description": "AngularJS support for Kinvey BaaS",
+    "contributors": [
+        {
+            "name": "Pete Martin",
+            "email": "pete@ninjatronic.com"
+        },
+        {
+            "name": "Nick Galbreath"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ninjatronic/angular-base64.git"
+    },
+    "devDependencies": {
+        "grunt": "",
+        "grunt-cli": "",
+        "grunt-contrib-clean": "",
+        "grunt-contrib-copy": "",
+        "grunt-contrib-jshint": "",
+        "grunt-contrib-watch": "",
+        "grunt-contrib-concat": "",
+        "grunt-contrib-uglify": "",
+        "grunt-notify": "",
+        "grunt-strip": "",
+        "grunt-text-replace": ""
+    }
+}
