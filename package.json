@@ -1,8 +1,8 @@
 {
-    "name": "angular-base64",
+    "name": "ngBase64",
     "version": "1.0.0",
     "author": "Ninjatronic",
-    "description": "AngularJS support for Kinvey BaaS",
+    "description": "Base64 Conversion for AngularJS Apps",
     "contributors": [
         {
             "name": "Pete Martin",
@@ -14,7 +14,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ninjatronic/angular-base64.git"
+        "url": "https://github.com/ninjatronic/ngBase64.git"
     },
     "devDependencies": {
         "grunt": "",

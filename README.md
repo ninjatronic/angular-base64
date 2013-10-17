@@ -1,17 +1,16 @@
-# angular-base64
+# ngBase64
 
 Encapsulation of Nick Galbreath's base64.js library for AngularJS
 
-# Building
+## Installation
+
+### Bower
 
 ```
-npm install
-grunt build
+bower install ngBase64
 ```
 
-Built file located in `./build/angular-base64.min.js`
-
-# Usage
+## Usage
 
 ```javascript
 angular.module('myApp', ['base64']).controller('myController', ['$base64', '$scope', function($base64, $scope) {
