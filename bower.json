@@ -1,0 +1,15 @@
+{
+    "name": "ngBase64",
+    "version": "1.0.1",
+    "main": [
+        "ngBase64.js",
+        "ngBase64.min.js"
+    ],
+    "ignore": [
+        "package.json",
+        "Gruntfile.js"
+    ],
+    "dependencies": {
+        "angular": ">= 1.0.8"
+    }
+}
