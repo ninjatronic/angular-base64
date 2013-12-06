@@ -7,18 +7,20 @@ Encapsulation of Nick Galbreath's base64.js library for AngularJS
 ### Bower
 
 ```
-bower install ngBase64
+bower install angular-base64
 ```
 
+**NB:** The `ngBase64` bower package is deprecated.
+
 ```html
-<script src="bower_components/ngBase64/ngBase64.min.js"></script>
+<script src="bower_components/ngBase64/angular-base64.js"></script>
 ```
 
 ## Usage
 
 ```javascript
 angular
-    .module('myApp', ['ngBase64'])
+    .module('myApp', ['base64'])
     .controller('myController', [
     
         '$base64', '$scope', 

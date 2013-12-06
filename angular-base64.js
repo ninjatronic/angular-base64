@@ -53,7 +53,7 @@
  *   then an exception is thrown.
  */
 
-angular.module('ngBase64', []).constant('$base64', {
+angular.module('base64', []).constant('$base64', {
     PADCHAR: '=',
     ALPHA: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/',
     getbyte64: function(s,i) {

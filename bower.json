@@ -1,9 +1,9 @@
 {
-    "name": "ngBase64",
-    "version": "1.0.1",
+    "name": "angular-base64",
+    "version": "2.0.0",
     "main": [
-        "ngBase64.js",
-        "ngBase64.min.js"
+        "angular-base64.js",
+        "angular-base64.min.js"
     ],
     "ignore": [
         "package.json",
