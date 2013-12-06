@@ -1,4 +1,4 @@
-# ngBase64
+# angular-base64
 
 Encapsulation of Nick Galbreath's base64.js library for AngularJS
 
