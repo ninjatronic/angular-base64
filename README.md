@@ -2,7 +2,8 @@
 
 Encapsulation of Nick Galbreath's base64.js library for AngularJS
 
-For Base64 encoding whch supports UTF8 see [angular-utf8-base64](https://github.com/stranger82/angular-utf8-base64)
+For Base64 encoding which supports UTF8 see [angular-utf8-base64](https://github.com/stranger82/angular-utf8-base64).
+Allows for base64 url encoding.
 
 ## Installation
 
@@ -20,6 +21,15 @@ bower install angular-base64
 
 ## Usage
 
+### Module
+
+```javascript
+angular.module('app',
+  [
+     'base64'
+  ]);
+```
+### Normal
 ```javascript
 angular
     .module('myApp', ['base64'])
@@ -30,5 +40,19 @@ angular
         
             $scope.encoded = $base64.encode('a string');
             $scope.decoded = $base64.decode('YSBzdHJpbmc=');
+    }]);
+```
+
+### Url Encoding
+```javascript
+angular
+    .module('myApp', ['base64'])
+    .controller('myController', [
+    
+        '$base64', '$scope', 
+        function($base64, $scope) {
+        
+            $scope.encoded = $base64.encodeUrl('a string');
+            $scope.decoded = $base64.decodeUrl('YSBzdHJpbmc=');
     }]);
 ```
