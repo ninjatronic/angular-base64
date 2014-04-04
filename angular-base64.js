@@ -111,6 +111,15 @@
             return x.join('');
         }
 
+        function decodeUrl(s) {
+            if (s.length % 4 == 2) s = s + "==";
+            else if (s.length % 4 == 3) s = s + "=";
+            s = s.replace(/-/g, "+");
+            s = s.replace(/_/g, "/");
+
+            return decode(s);
+        }
+
         function getbyte(s,i) {
             var x = s.charCodeAt(i);
             if (x > 255) {
@@ -155,6 +164,14 @@
                     break;
             }
             return x.join('');
+        }
+
+        function encodeUrl(s) {
+            s = s.replace(/\=/g, "");
+            s = s.replace(/\+/g, "-");
+            s = s.replace(/\//g, "_");
+
+            return encode(s);
         }
 
         return {
