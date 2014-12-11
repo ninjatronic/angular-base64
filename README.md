@@ -2,6 +2,8 @@
 
 Encapsulation of Nick Galbreath's base64.js library for AngularJS
 
+For Base64 encoding whch supports UTF8 see [angular-utf8-base64](https://github.com/stranger82/angular-utf8-base64)
+
 ## Installation
 
 ### Bower

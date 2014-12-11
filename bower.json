@@ -17,8 +17,7 @@
         "url": "https://github.com/ninjatronic/angular-base64.git"
     },
     "main": [
-        "angular-base64.js",
-        "angular-base64.min.js"
+        "angular-base64.js"
     ],
     "ignore": [
         "package.json",
