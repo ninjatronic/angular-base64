@@ -32,3 +32,19 @@ angular
             $scope.decoded = $base64.decode('YSBzdHJpbmc=');
     }]);
 ```
+
+## *URL Safe* Base64 Encoding
+
+Base 64 encoded strings can be made "URL Safe" with `encodeURIComponent`...
+
+```javascript
+var base64EncodedString = $base64.encode('whatever');
+var urlSafeBase64EncodedString = encodeURIComponent(base64EncodedString);
+```
+
+To decode a "URL Safe" base 64 encoded string use `decodeURIComponent` *before* `$base64.decode`...
+
+```javascript
+var base64EncodedString = decodeURIComponent('d2hhdGV2ZXI');
+var decodedString = $base64.decode(base64EncodedString);
+```
