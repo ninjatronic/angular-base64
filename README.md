@@ -33,7 +33,7 @@ angular
     }]);
 ```
 
-## Unicode
+### Unicode
 
 You can encode unicode strings using base64 as described [here](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_.22Unicode_Problem.22).
 
@@ -50,16 +50,16 @@ angular
     }]);
 ```
 
-## *URL Safe* Base64 Encoding
+### *URL Safety*
 
-Base 64 encoded strings can be made "URL Safe" with `encodeURIComponent`...
+If you want to transmit a base64 encoded string in a url you must make it "URL safe" by encoding it with `encodeURIComponent`.
 
 ```javascript
 var base64EncodedString = $base64.encode('a string');
 var urlSafeBase64EncodedString = encodeURIComponent(base64EncodedString);
 ```
 
-To decode a "URL Safe" base 64 encoded string use `decodeURIComponent` *before* `$base64.decode`...
+To decode the above string use `decodeURIComponent`, then `decode`.
 
 ```javascript
 var base64EncodedString = decodeURIComponent('YSBzdHJpbmc%3D');
