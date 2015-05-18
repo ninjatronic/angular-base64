@@ -1,15 +1,35 @@
 {
-    "devDependencies": {
-        "grunt": "",
-        "grunt-cli": "",
-        "grunt-contrib-clean": "",
-        "grunt-contrib-copy": "",
-        "grunt-contrib-jshint": "",
-        "grunt-contrib-watch": "",
-        "grunt-contrib-concat": "",
-        "grunt-contrib-uglify": "",
-        "grunt-notify": "",
-        "grunt-strip": "",
-        "grunt-text-replace": ""
-    }
+  "dependencies": {
+    "angular": ">= 1.0.8"
+  },
+  "devDependencies": {
+    "grunt": "",
+    "grunt-cli": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-watch": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-notify": "",
+    "grunt-strip": "",
+    "grunt-text-replace": ""
+  },
+  "name": "angular-base64",
+  "description": "Base64 Conversion for AngularJS Apps",
+  "version": "2.0.5",
+  "main": "angular-base64.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ninjatronic/angular-base64.git"
+  },
+  "author": "Pete Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninjatronic/angular-base64/issues"
+  },
+  "homepage": "https://github.com/ninjatronic/angular-base64"
 }
