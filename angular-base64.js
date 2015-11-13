@@ -73,7 +73,7 @@
             s = "" + s;
             var pads, i, b10, imax;
 
-            if ((s.length % 4) === 1) {
+            if ((s.length % 4) === 3) {
                 s = s + PADCHAR;
             }
 
