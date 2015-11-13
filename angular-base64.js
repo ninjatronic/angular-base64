@@ -71,8 +71,18 @@
         function decode(s) {
             // convert to string
             s = "" + s;
-            var pads, i, b10;
-            var imax = s.length;
+            var pads, i, b10, imax;
+
+            if ((s.length % 4) === 1) {
+                s = s + PADCHAR;
+            }
+
+            if ((s.length % 4) === 2) {
+                s = s + PADCHAR + PADCHAR;
+            }
+
+            imax = s.length;
+
             if (imax == 0) {
                 return s;
             }
