@@ -2,6 +2,6 @@
 require('angular');
 
 // load the angular-base64 module
-require('angular-base64.js')
+require('./angular-base64.js')
 
 module.exports = 'base64';
