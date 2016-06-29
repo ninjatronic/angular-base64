@@ -12,7 +12,7 @@
     "grunt-strip": "",
     "grunt-text-replace": ""
   },
-  "name": "@lemming/angular-base64",
+  "name": "@ninjatronic/angular-base64",
   "description": "Encapsulation of Nick Galbreath's base64.js library for AngularJS",
   "version": "0.0.2",
   "main": "index.js",
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelemmer/angular-base64.git"
+    "url": "git+https://github.com/ninjatronic/angular-base64.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joelemmer/angular-base64/issues"
+    "url": "https://github.com/ninjatronic/angular-base64/issues"
   },
-  "homepage": "https://github.com/joelemmer/angular-base64#readme"
+  "homepage": "https://github.com/ninjatronic/angular-base64#readme"
 }
