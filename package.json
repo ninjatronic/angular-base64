@@ -1,15 +1,30 @@
 {
-    "devDependencies": {
-        "grunt": "",
-        "grunt-cli": "",
-        "grunt-contrib-clean": "",
-        "grunt-contrib-copy": "",
-        "grunt-contrib-jshint": "",
-        "grunt-contrib-watch": "",
-        "grunt-contrib-concat": "",
-        "grunt-contrib-uglify": "",
-        "grunt-notify": "",
-        "grunt-strip": "",
-        "grunt-text-replace": ""
-    }
+  "name": "angular-base64",
+  "version": "2.0.4",
+  "description": "Base64 Conversion for AngularJS Apps",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninjatronic/angular-base64.git"
+  },
+  "author": {
+    "name": "Ninjatronic"
+  },
+  "bugs": {
+    "url": "https://github.com/ninjatronic/angular-base64/issues"
+  },
+  "homepage": "https://github.com/ninjatronic/angular-base64",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-cli": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-watch": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-notify": "",
+    "grunt-strip": "",
+    "grunt-text-replace": ""
+  }
 }
