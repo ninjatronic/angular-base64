@@ -2,7 +2,7 @@
 
 Encapsulation of Nick Galbreath's base64.js library for AngularJS
 
-For Base64 encoding whch supports UTF8 see [angular-utf8-base64](https://github.com/stranger82/angular-utf8-base64)
+For Base64 encoding which supports UTF8 see [angular-utf8-base64](https://github.com/stranger82/angular-utf8-base64)
 
 ## Installation
 
@@ -18,6 +18,12 @@ bower install angular-base64
 <script src="bower_components/angular-base64/angular-base64.js"></script>
 ```
 
+### NPM
+
+```
+npm i angular-base64
+```
+
 ## Usage
 
 ```javascript
@@ -30,6 +36,20 @@ angular
         
             $scope.encoded = $base64.encode('a string');
             $scope.decoded = $base64.decode('YSBzdHJpbmc=');
+    }]);
+```
+
+### Requiring NPM module when using Browserify
+
+```javascript
+angular
+    .module('myApp', [ require('angular-base64') ])
+    .controller('myController', [
+        '$base64', '$scope',
+        function($base64, $scope) {
+
+        $scope.encoded = $base64.encode('a string');
+        $scope.decoded = $base64.decode('YSBzdHJpbmc=');
     }]);
 ```
 

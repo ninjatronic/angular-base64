@@ -62,7 +62,7 @@
 
         function getbyte64(s,i) {
             var idx = ALPHA.indexOf(s.charAt(i));
-            if (idx == -1) {
+            if (idx === -1) {
                 throw "Cannot decode base64";
             }
             return idx;
@@ -83,18 +83,18 @@
 
             imax = s.length;
 
-            if (imax == 0) {
+            if (imax === 0) {
                 return s;
             }
 
-            if (imax % 4 != 0) {
+            if (imax % 4 !== 0) {
                 throw "Cannot decode base64";
             }
 
             pads = 0;
-            if (s.charAt(imax -1) == PADCHAR) {
+            if (s.charAt(imax -1) === PADCHAR) {
                 pads = 1;
-                if (s.charAt(imax -2) == PADCHAR) {
+                if (s.charAt(imax -2) === PADCHAR) {
                     pads = 2;
                 }
                 // either way, we want to ignore this last block
@@ -130,7 +130,7 @@
         }
 
         function encode(s) {
-            if (arguments.length != 1) {
+            if (arguments.length !== 1) {
                 throw "SyntaxError: Not enough arguments";
             }
 
@@ -142,7 +142,7 @@
 
             var imax = s.length - s.length % 3;
 
-            if (s.length == 0) {
+            if (s.length === 0) {
                 return s;
             }
             for (i = 0; i < imax; i += 3) {
