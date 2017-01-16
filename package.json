@@ -10,14 +10,15 @@
     "grunt-contrib-uglify": "",
     "grunt-notify": "",
     "grunt-strip": "",
-    "grunt-text-replace": ""
+    "grunt-text-replace": "",
+    "tape": "^4.6.3"
   },
   "name": "@ninjatronic/angular-base64",
   "description": "Encapsulation of Nick Galbreath's base64.js library for AngularJS",
   "version": "0.0.2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests"
   },
   "repository": {
     "type": "git",
