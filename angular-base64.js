@@ -69,17 +69,15 @@
         }
 
         function decode(s) {
+
+            if(!s) {
+                return s;
+            }
+
             // convert to string
             s = "" + s;
             var pads, i, b10;
             var imax = s.length;
-            if (imax === 0) {
-                return s;
-            }
-
-            if (imax % 4 !== 0) {
-                throw "Cannot decode base64";
-            }
 
             pads = 0;
             if (s.charAt(imax -1) === PADCHAR) {
@@ -124,6 +122,10 @@
                 throw "SyntaxError: Not enough arguments";
             }
 
+            if(!s) {
+                return s;
+            }
+
             var i, b10;
             var x = [];
 
@@ -132,9 +134,6 @@
 
             var imax = s.length - s.length % 3;
 
-            if (s.length === 0) {
-                return s;
-            }
             for (i = 0; i < imax; i += 3) {
                 b10 = (getbyte(s,i) << 16) | (getbyte(s,i+1) << 8) | getbyte(s,i+2);
                 x.push(ALPHA.charAt(b10 >> 18));
