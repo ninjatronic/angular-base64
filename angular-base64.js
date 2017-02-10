@@ -63,7 +63,7 @@
         function getbyte64(s,i) {
             var idx = ALPHA.indexOf(s.charAt(i));
             if (idx === -1) {
-                throw "Cannot decode base64";
+                throw new Error("Cannot decode base64");
             }
             return idx;
         }
@@ -78,7 +78,7 @@
             }
 
             if (imax % 4 !== 0) {
-                throw "Cannot decode base64";
+                throw new Error("Cannot decode base64");
             }
 
             pads = 0;
@@ -114,14 +114,14 @@
         function getbyte(s,i) {
             var x = s.charCodeAt(i);
             if (x > 255) {
-                throw "INVALID_CHARACTER_ERR: DOM Exception 5";
+                throw new Error("INVALID_CHARACTER_ERR: DOM Exception 5");
             }
             return x;
         }
 
         function encode(s) {
             if (arguments.length !== 1) {
-                throw "SyntaxError: Not enough arguments";
+                throw new Error("SyntaxError: Not enough arguments");
             }
 
             var i, b10;
